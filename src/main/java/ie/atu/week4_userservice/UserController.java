@@ -22,7 +22,7 @@ public class UserController {
     public Map<String, String> confirmationRegister (@RequestBody UserDetails userDetails) {
         String confirm = registrationServiceClient.someDetails(userDetails);
         Map<String, String> responseMessage = new HashMap<>();
-        responseMessage.put("messafe", confirm);
+        responseMessage.put("message", confirm);
         return  responseMessage;
     }
 
